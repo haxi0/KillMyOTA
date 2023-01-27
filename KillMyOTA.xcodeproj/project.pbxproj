@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DC4218D2983EA0E00C85544 /* KillMyOTAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4218C2983EA0D00C85544 /* KillMyOTAApp.swift */; };
+		6DC4218F2983EA0E00C85544 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4218E2983EA0E00C85544 /* ContentView.swift */; };
+		6DC421912983EA1100C85544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC421902983EA1100C85544 /* Assets.xcassets */; };
+		6DC421942983EA1100C85544 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC421932983EA1100C85544 /* Preview Assets.xcassets */; };
+		6DC4219D2983EA5A00C85544 /* grant_full_disk_access.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4219C2983EA5A00C85544 /* grant_full_disk_access.m */; };
+		6DC421A02983EA9200C85544 /* helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4219E2983EA9200C85544 /* helpers.m */; };
+		6DC421A32983EAE500C85544 /* vm_unaligned_copy_switch_race.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DC421A12983EAE500C85544 /* vm_unaligned_copy_switch_race.c */; };
+		6DC421B22984364900C85544 /* Blocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC421B12984364900C85544 /* Blocker.m */; };
+		6DC421CF298462EB00C85544 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC421CE298462EB00C85544 /* ButtonStyles.swift */; };
+		6DC421D12984692E00C85544 /* BlockerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC421D02984692E00C85544 /* BlockerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6DC421892983EA0D00C85544 /* KillMyOTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KillMyOTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC4218C2983EA0D00C85544 /* KillMyOTAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillMyOTAApp.swift; sourceTree = "<group>"; };
+		6DC4218E2983EA0E00C85544 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6DC421902983EA1100C85544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DC421932983EA1100C85544 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6DC4219B2983EA5900C85544 /* KillMyOTA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KillMyOTA-Bridging-Header.h"; sourceTree = "<group>"; };
+		6DC4219C2983EA5A00C85544 /* grant_full_disk_access.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = grant_full_disk_access.m; sourceTree = "<group>"; };
+		6DC4219E2983EA9200C85544 /* helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = helpers.m; sourceTree = "<group>"; };
+		6DC4219F2983EA9200C85544 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
+		6DC421A12983EAE500C85544 /* vm_unaligned_copy_switch_race.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vm_unaligned_copy_switch_race.c; sourceTree = "<group>"; };
+		6DC421A22983EAE500C85544 /* vm_unaligned_copy_switch_race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_unaligned_copy_switch_race.h; sourceTree = "<group>"; };
+		6DC421A42983EB7F00C85544 /* grant_full_disk_access.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = grant_full_disk_access.h; sourceTree = "<group>"; };
+		6DC421A529842C5F00C85544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6DC421B12984364900C85544 /* Blocker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blocker.m; sourceTree = "<group>"; };
+		6DC421B3298436D400C85544 /* Blocker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Blocker.h; sourceTree = "<group>"; };
+		6DC421CE298462EB00C85544 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		6DC421D02984692E00C85544 /* BlockerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DC421862983EA0D00C85544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DC421802983EA0D00C85544 = {
+			isa = PBXGroup;
+			children = (
+				6DC4218B2983EA0D00C85544 /* KillMyOTA */,
+				6DC4218A2983EA0D00C85544 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DC4218A2983EA0D00C85544 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DC421892983EA0D00C85544 /* KillMyOTA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DC4218B2983EA0D00C85544 /* KillMyOTA */ = {
+			isa = PBXGroup;
+			children = (
+				6DC421CD298462DD00C85544 /* Extensions */,
+				6DC421B02984362B00C85544 /* BlockOTA */,
+				6DC421A529842C5F00C85544 /* Info.plist */,
+				6DC4219A2983EA3C00C85544 /* Exploit */,
+				6DC4218C2983EA0D00C85544 /* KillMyOTAApp.swift */,
+				6DC4218E2983EA0E00C85544 /* ContentView.swift */,
+				6DC4219B2983EA5900C85544 /* KillMyOTA-Bridging-Header.h */,
+				6DC421902983EA1100C85544 /* Assets.xcassets */,
+				6DC421922983EA1100C85544 /* Preview Content */,
+				6DC421D02984692E00C85544 /* BlockerView.swift */,
+			);
+			path = KillMyOTA;
+			sourceTree = "<group>";
+		};
+		6DC421922983EA1100C85544 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6DC421932983EA1100C85544 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6DC4219A2983EA3C00C85544 /* Exploit */ = {
+			isa = PBXGroup;
+			children = (
+				6DC421A12983EAE500C85544 /* vm_unaligned_copy_switch_race.c */,
+				6DC421A22983EAE500C85544 /* vm_unaligned_copy_switch_race.h */,
+				6DC4219C2983EA5A00C85544 /* grant_full_disk_access.m */,
+				6DC421A42983EB7F00C85544 /* grant_full_disk_access.h */,
+				6DC4219E2983EA9200C85544 /* helpers.m */,
+				6DC4219F2983EA9200C85544 /* helpers.h */,
+			);
+			path = Exploit;
+			sourceTree = "<group>";
+		};
+		6DC421B02984362B00C85544 /* BlockOTA */ = {
+			isa = PBXGroup;
+			children = (
+				6DC421B12984364900C85544 /* Blocker.m */,
+				6DC421B3298436D400C85544 /* Blocker.h */,
+			);
+			path = BlockOTA;
+			sourceTree = "<group>";
+		};
+		6DC421CD298462DD00C85544 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6DC421CE298462EB00C85544 /* ButtonStyles.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DC421882983EA0D00C85544 /* KillMyOTA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DC421972983EA1100C85544 /* Build configuration list for PBXNativeTarget "KillMyOTA" */;
+			buildPhases = (
+				6DC421852983EA0D00C85544 /* Sources */,
+				6DC421862983EA0D00C85544 /* Frameworks */,
+				6DC421872983EA0D00C85544 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KillMyOTA;
+			productName = KillMyOTA;
+			productReference = 6DC421892983EA0D00C85544 /* KillMyOTA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DC421812983EA0D00C85544 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6DC421882983EA0D00C85544 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = 6DC421842983EA0D00C85544 /* Build configuration list for PBXProject "KillMyOTA" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DC421802983EA0D00C85544;
+			productRefGroup = 6DC4218A2983EA0D00C85544 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DC421882983EA0D00C85544 /* KillMyOTA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DC421872983EA0D00C85544 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC421942983EA1100C85544 /* Preview Assets.xcassets in Resources */,
+				6DC421912983EA1100C85544 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DC421852983EA0D00C85544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC4218F2983EA0E00C85544 /* ContentView.swift in Sources */,
+				6DC421D12984692E00C85544 /* BlockerView.swift in Sources */,
+				6DC421A32983EAE500C85544 /* vm_unaligned_copy_switch_race.c in Sources */,
+				6DC4218D2983EA0E00C85544 /* KillMyOTAApp.swift in Sources */,
+				6DC421B22984364900C85544 /* Blocker.m in Sources */,
+				6DC421CF298462EB00C85544 /* ButtonStyles.swift in Sources */,
+				6DC4219D2983EA5A00C85544 /* grant_full_disk_access.m in Sources */,
+				6DC421A02983EA9200C85544 /* helpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6DC421952983EA1100C85544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DC421962983EA1100C85544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DC421982983EA1100C85544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KillMyOTA/Preview Content\"";
+				DEVELOPMENT_TEAM = A999YUQPG2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KillMyOTA/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Full access to files on your device is required to apply modifications.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.haxi0.KillMyOTA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "KillMyOTA/KillMyOTA-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DC421992983EA1100C85544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KillMyOTA/Preview Content\"";
+				DEVELOPMENT_TEAM = A999YUQPG2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KillMyOTA/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Full access to files on your device is required to apply modifications.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.haxi0.KillMyOTA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "KillMyOTA/KillMyOTA-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DC421842983EA0D00C85544 /* Build configuration list for PBXProject "KillMyOTA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC421952983EA1100C85544 /* Debug */,
+				6DC421962983EA1100C85544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DC421972983EA1100C85544 /* Build configuration list for PBXNativeTarget "KillMyOTA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC421982983EA1100C85544 /* Debug */,
+				6DC421992983EA1100C85544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DC421812983EA0D00C85544 /* Project object */;
+}
