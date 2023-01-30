@@ -13,7 +13,7 @@ public struct CustomButtonStyle: ButtonStyle {
             .font(Font.body.weight(.medium))
             .padding(.vertical, 12)
             .foregroundColor(Color.white)
-            .frame(maxWidth: 370)
+            .frame(maxWidth: .infinity)
             .background(
                 RoundedRectangle(cornerRadius: 12.0, style: .continuous)
                     .fill(Color.accentColor)
