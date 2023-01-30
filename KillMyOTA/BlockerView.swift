@@ -9,8 +9,9 @@ import SwiftUI
 
 struct BlockerView: View {
     @AppStorage("statusOTA") private var statusOTA = true
-    @State private var disabledAfterApply = false
-    @State private var output = "Unknown state"
+    @State private var disabledAfterApply = true
+    @State private var output = "Loading..."
+    @State private var version = "Unknown"
     
     var body: some View {
         Spacer()
@@ -35,6 +36,7 @@ struct BlockerView: View {
             }
             .disabled(true)
             .buttonStyle(CustomButtonStyle())
+            .padding()
             } else {
                 Button {
                     if FileManager.default.fileExists(atPath: "/var/mobile/Library/Preferences/com.apple.MobileAsset.plist") {
@@ -51,18 +53,27 @@ struct BlockerView: View {
                 }
                 .disabled(disabledAfterApply)
                 .buttonStyle(CustomButtonStyle())
+                .padding()
             }
         }
         .onAppear {
             grant_full_disk_access() { error in
                 print(error?.localizedDescription as Any)
             }
-            if FileManager.default.fileExists(atPath: "/var/mobile/Library/Preferences/com.apple.MobileAsset.plist") {
-                output = "OTA will be enabled"
-            } else {
-                output = "OTA will be disabled"
+            let extractedVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
+            version = extractedVersion!
+            Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { _ in
+                if FileManager.default.fileExists(atPath: "/var/mobile/Library/Preferences/com.apple.MobileAsset.plist") {
+                    output = "OTA will be enabled"
+                    disabledAfterApply = false
+                } else {
+                    output = "OTA will be disabled"
+                    disabledAfterApply = false
+                }
             }
         }
+        Text(version)
+            .opacity(0.5)
     }
 }
 
